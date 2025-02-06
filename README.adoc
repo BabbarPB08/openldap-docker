@@ -330,6 +330,10 @@ link:scripts/[scripts]-directory includes some scripts that can be used to searc
 * Install openldap-demo to OpenShift:
 
 ```
+oc import-image kazhar/openldap-demo:latest --from=docker.io/kazhar/openldap-demo:latest --confirm
+```
+
+```
 sh ocp-openldap-demo.sh install <namespace>
 ```
 
